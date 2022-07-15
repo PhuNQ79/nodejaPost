@@ -1,0 +1,54 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "nphu@gmail.com",
+    "password": "1610"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "nphu@gmail.com",
+    "password": "1610"
+}
+
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQxMjc4OGUwMGRiNGFlZTdhMjdlNzgiLCJpYXQiOjE2NTc4NzQ0MDN9.akypHizm1eS_DoQBlMa5sAy6SHU0A-vaO8U8OxCfbCM
+
+{
+    "title": "React Hook",
+    "description": "Xịn lắm",
+    "url": "react.com.vn",
+    "status": ""
+}
+
+###
+GET http://localhost:5000/api/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQxMjc4OGUwMGRiNGFlZTdhMjdlNzgiLCJpYXQiOjE2NTc4NzQ0MDN9.akypHizm1eS_DoQBlMa5sAy6SHU0A-vaO8U8OxCfbCM
+
+
+###
+PUT http://localhost:5000/api/posts/62d12a9d4c267d405cb4a828
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQxMjc4OGUwMGRiNGFlZTdhMjdlNzgiLCJpYXQiOjE2NTc4NzQ0MDN9.akypHizm1eS_DoQBlMa5sAy6SHU0A-vaO8U8OxCfbCM
+
+{
+    "title": "Vue",
+    "description": "kkk",
+    "url": "shopee.com",
+    "status": "LEARNED"
+
+}
+
+###
+
+DELETE  http://localhost:5000/api/posts/62d12a9d4c267d405cb4a828
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmQxMjc4OGUwMGRiNGFlZTdhMjdlNzgiLCJpYXQiOjE2NTc4NzQ0MDN9.akypHizm1eS_DoQBlMa5sAy6SHU0A-vaO8U8OxCfbCM
+
